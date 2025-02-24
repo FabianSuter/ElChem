@@ -105,10 +105,10 @@
 
 
 % --------------------------------------- COLOR DEFINITIONS ---------------------------------------
-\definecolor{sectioncolor}{HTML}{4f94cd}
-\definecolor{subsectioncolor}{HTML}{87cefa}
-\definecolor{sectextcol}{HTML}{000000}
-\definecolor{subsectextcol}{HTML}{000000}
+\definecolor{sectioncolor}{RGB}{255,100,0}
+\definecolor{subsectioncolor}{RGB}{255,200,0}
+\definecolor{sectextcol}{RGB}{255,255,255}
+\definecolor{subsectextcol}{RGB}{0,0,0}
 
 \definecolor{backcolour}{HTML}{f5f5f0} % background color for highlighted text
 
@@ -247,6 +247,7 @@
                       text depth=0pt,               % text depth:       0pt (needed so text stays vertically centered)
                       minimum height=5mm,           % minimum height:   5mm
                       inner sep=2pt,                % inner padding:    2pt
+                      rounded corners = 2pt,
                       align=left]                   % text alignment:   left
                       {\thesection\ #1};}}
 
@@ -262,6 +263,7 @@
                       text depth=0pt,               % text depth:       0pt (needed so text stays vertically centered)
                       minimum height=5mm,           % minimum height:   5mm
                       inner sep=2pt,                % inner padding:    2pt
+                      rounded corners = 2pt,
                       align=left]                   % text alignment:   left
                       {#1};}}
 
@@ -282,6 +284,7 @@
                       text width=\columnwidth-4pt,  % text width:       columnwidth - 2x padding 
                       text depth=0pt,               % text depth:       0pt (needed so text stays vertically centered)
                       minimum height=5mm,           % minimum height:   5mm 
+                      rounded corners = 2pt,
                       inner sep=2pt,                % inner padding:    2pt 
                       align=left]                   % text alignment:   left
                       {\thesubsection\ #1};}}
@@ -295,6 +298,7 @@
                       text=subsectextcol,           % text color:       subsectextcol 
                       text width=\columnwidth-4pt,  % text width:       columnwidth - 2x padding 
                       minimum height=5mm,           % minimum height:   5mm 
+                      rounded corners = 2pt,
                       inner sep=2pt,                % inner padding:    2pt 
                       align=left]                   % text alignment:   left
                       {#1};}}
