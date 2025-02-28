@@ -209,8 +209,13 @@
 \newcommand{\jimg}{\ensuremath{\mathrm{j}}} 
 
 
-% Lewis command
-% TODO: to be found and commented
+% Lewis command (only bullets & double-bullets, no lines available)
+% Source: https://tex.stackexchange.com/questions/137227/draw-lewis-structures-like-a-book
+% \lewis{<core atom>}{<top>}{<right>}{<bottom>}{<left>}{<valence>}{<inner electron shells>} obn rechts unten links
+% core atom                 : F
+% top, left, right, bottom  : <.> or <..>
+% valence                   : <n+> or <n-> (n = natural number)
+% inner electron shells     : 1s^22s^22p^5 (F)
 \newcommand\lewis[7]{%
   \ifthenelse{\equal{#3}{}}%
     {\def\RHS{}\def\RRHS{\hspace{.5ex}}}%
