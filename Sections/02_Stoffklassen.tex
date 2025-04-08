@@ -1,33 +1,72 @@
 \section{Stoffklassen}
-    Stoffe lassen sich in 3 Arten einteilen:
+    % Stoffe lassen sich in 3 Arten einteilen:
     \begin{itemize}
-        \item molekulare Stoffe:\\
-        Abgeschlossener Atomverband aus Nichtmetallen (Molekül).\\Formel: genaue Anzahl Atome pro Molekül. Z.B \ce\\Nicht elektrisch Leitend, da keine freien Ladungsträger vorhanden.
-        \item Metalle und Halbmetalle:\\
-        unendlicher Verband aus metallischen Atomkernen umgebend von delokaliserten (Valenz-) Elektronen (Elektronen-Wolke).\\Formel: Verhältnis der Atome im Gitter. Z.B. \ce{Fe}
-        \item Salze:\\
-        unendlicher Verband aus Ionen(Kation(\ce{+}); Anion(\ce{-})).\\ metallische Kationen und nichtmetallische Kationen\\(können auch molekulare Kationen sein(\ce{SO4-})).\\Formel: Verhältnis der Kationen und Anionen. Z.B. \ce{KCl}\\Besitzt in Schmelze und in Lösung frei Ladungsträger (Ionen) leiten in diesen Zuständen dementsprechend gut Strom.
+        \item \textbf{molekulare Stoffe \& Edelgase:}
+        \begin{itemize}
+            \item Abgeschlossener Atomverband aus Nichtmetallen (Molekül)
+            \item \tikz[baseline=(text.base)]\node[fill=green, fill opacity=0.3, text opacity=1, rounded corners, inner sep=2pt, minimum height=5pt] (text) {Formel:}; genaue Anzahl Atome pro Molekül, z.B \ce{H_2O} oder \ce{He}
+            \item Nicht elektrisch Leitend, da keine freien Ladungsträger vorhanden
+        \end{itemize}
+        \item \textbf{Metalle und Halbmetalle:}
+        \begin{itemize}
+            \item unendlicher Verband aus metallischen Atomkernen umgeben von delokaliserten (Valenz-) Elektronen (Elektronen-Wolke)
+            \item \tikz[baseline=(text.base)]\node[fill=green, fill opacity=0.3, text opacity=1, rounded corners, inner sep=2pt, minimum height=5pt] (text) {Formel:}; Verhältnis der Atome im Gitter. Z.B. \ce{Fe}
+        \end{itemize}
+        \item \textbf{Salze:}
+        \begin{itemize}
+            \item unendl. Verband aus metallischen Kationen(\ce{+}) und nichtmetall. Anionen(\ce{-}) \\ (können auch molekulare Kationen sein(\ce{SO4-}))
+            \item \tikz[baseline=(text.base)]\node[fill=green, fill opacity=0.3, text opacity=1, rounded corners, inner sep=2pt, minimum height=5pt] (text) {Formel:}; Verhältnis der Kationen und Anionen, z.B. \ce{Al_2O_3} = \ce{Al^{3+} und \ce{O^{2-}}}
+            \item Besitzt in Schmelze und in Lösung freie Ladungsträger (Ionen) \\$\rightarrow$ leitet in diesen Zuständen dementsprechend gut Strom
+        \end{itemize}
     \end{itemize}
 \subsection{Metalle und Halbmetalle}
-    Metalle besitzen durch die delokalisierten Valenzelektronen (Elektronenwolke) frei Ladungsträger, leiten sehr gut Strom und Wärme.
+    Metalle besitzen durch delokalisierte Ve (Elektronenwolke) freie Ladungsträger 
     \begin{itemize}
-        \item Leitfähigkeit nimmt mit steigender Temperatur ab.\\Die Bewegung der Atomrümpfe erhöht sich wodurch weniger Platz für die ELektronen um sich zu bewegen bleibt.
+        \item[$\rightarrow$] gute Wärme- und el. Leitfähigkeit, Verformbarkeit
+        \item Leitfähigkeit bei Metallen
+        \begin{itemize}
+            \item nimmt mit steigender Temperatur ab\\$\rightarrow$ Die Bewegung der Atomrümpfe erhöht sich\\$\Rightarrow$ weniger Platz für die Elektronenbewegung
+        \end{itemize}
     \end{itemize}
+    \begin{minipage}{0.48\columnwidth}
+        \textbf{Beispiel Lithium:}
+            \begin{itemize}
+                \item Valenzband (spez. Energieniveau) nicht ganz gefüllt\\$\rightarrow$ Elektronen können sich im Band bewegen
+            \end{itemize}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\columnwidth}
+        \textbf{Beispiel Beryllium:}
+            \begin{itemize}
+                \item Valenzband komplett gefüllt, aber mit leerem Leitungsband überlappend\\$\rightarrow$ Elektronen können sich im Band bewegen
+            \end{itemize} 
+    \end{minipage}
     \begin{center}
-    \includegraphics[height=3cm]{pictures/BBànder.png}
+        \includegraphics[height=3cm]{pictures/Baender.png}
     \end{center}
-    Allgemein sind Stoffe leitfähig wenn sie entweder wie Lithium:
+    Halbmetalle haben weder Elektronenwolken noch überlappende Energieniveaus, Nähe vom Valenz- und Leitungsband ermöglichen aber ein Überspringen
     \begin{itemize}
-        \item das Valenzband (spez. Energieniveau) nicht ganz gefüllt haben und sich dadurch ELektronen in jenem Band bewegen können.
+        \item Leitfähigkeit bei Halbmetallen 
+        \begin{itemize}
+            \item nimmt mit steigender Temperatur stark zu\\$\rightarrow$ Die Elektronen springen viel zahlreicher auf das Leitungband über\\$\Rightarrow$ Platz für Elektronenbewegung im Leitungsband
+        \end{itemize}
     \end{itemize}
-    oder wenn sie wie Beryllium:
-    \begin{itemize}
-        \item das Valenzband komplett gefüllt haben dieses jedoch mit einem leeren Leitungsband überlappt. Wodurch wiederum die beweglichkeit der Elektronen gewährleistet ist.
-    \end{itemize}
-    Halbmetalle haben weder Elektronenwolken noch überlappende Energieniveaus jedoch sind Valenz- und Leitungsband so nahe bei einander das ein überspringen ermöglicht wird.
-    \begin{itemize}
-        \item Leitfähigkeit nimmt mit zunehmender Temperatur stark zu.\\Die Elektronen springen viel zahlreicher auf das Leitungband über wodurch im Leitungsband wiederum Platz für Elektronenbewegung geschaffen wird.
-    \end{itemize}
+    % Metalle besitzen durch delokal. Ve (Elektronenwolke) freie Ladungsträger $\rightarrow$ gute Wärme- und el. Leitfähigkeit, Verformbarkeit
+    % \begin{itemize}
+    %     \item Leitfähigkeit nimmt mit steigender Temperatur ab.\\Die Bewegung der Atomrümpfe erhöht sich wodurch weniger Platz für die ELektronen um sich zu bewegen bleibt.
+    % \end{itemize}
+    % Allgemein sind Stoffe leitfähig wenn sie entweder wie Lithium:
+    % \begin{itemize}
+    %     \item das Valenzband (spez. Energieniveau) nicht ganz gefüllt haben und sich dadurch ELektronen in jenem Band bewegen können.
+    % \end{itemize}
+    % oder wenn sie wie Beryllium:
+    % \begin{itemize}
+    %     \item das Valenzband komplett gefüllt haben dieses jedoch mit einem leeren Leitungsband überlappt. Wodurch wiederum die beweglichkeit der Elektronen gewährleistet ist.
+    % \end{itemize}
+    % Halbmetalle haben weder Elektronenwolken noch überlappende Energieniveaus jedoch sind Valenz- und Leitungsband so nahe bei einander das ein überspringen ermöglicht wird.
+    % \begin{itemize}
+    %     \item Leitfähigkeit nimmt mit zunehmender Temperatur stark zu.\\Die Elektronen springen viel zahlreicher auf das Leitungband über wodurch im Leitungsband wiederum Platz für Elektronenbewegung geschaffen wird.
+    % \end{itemize}
 \subsection{Dotierung von Halbmetallen}
     Unter Dotierung versteht man das einbringen von Fremdatomen ins Atomgitter eines Halbleiters. Man unterscheidet 2 Arten von dotierung:
     \begin{itemize}
