@@ -3,19 +3,33 @@
     
     Möglich wenn $\Delta$G $<$ 0 $\&$ v.a. \ce{O2, H2O/H3O+} (OM) vorhanden
 
+    Wenn $E_a$ gross $\to$ Reaktionsgeschwindigkeit klein (siehe auch \ref{Reaktionsgeschw})
+
 \subsection{Korrosionsarten}
     \subsubsection{Elchem Korrosion}
+        Häufigste Korrosionsart, Ox. und Red. \textbf{räumlich getrennt}, wässriger Elektrolyt
+
         $\Rightarrow$ Bildung galvanische Zelle
-    \subsubsection{O2-Typ-Korrosion}
-        \ce{O2 + 2H2O + 4e- -> 4OH-}\\
-        \ce{2Fe + 3/2 O2 + H2O -> 2FeOOH}\\
-        Voraussetzung ist Vorhandensein von \ce{O2} und \ce{H2O}; RG relativ langsam!
+    \subsubsection{O2-Typ-Korrosion $\to$ \ref{Oxidschicht}}
+        \ce{O2 + 2H2O + 4e- -> 4OH-}
+
+        \ce{2Fe + 3/2 O2 + H2O -> 2FeOOH}
+
+        Voraussetzung ist Vorhandensein von \ce{O2} und \ce{H2O}, RG relativ langsam!
     \subsubsection{Säure/Wasserstoffkorrosion}
         Ist pH-Abhängig:
-        \begin{itemize}
-            \item Sauer: \ce{2H3O+ + 2 e- <--> H2 + 2H20}
-            \item Basisch: \ce{2H2O + 2 e- <--> H2 + 2 OH-}
-        \end{itemize}
+
+        \begin{minipage}{0.55\linewidth}
+            \begin{itemize}
+                \item Sauer: \ce{2H3O+ + 2 e- <--> H2 + 2H20}
+                \item Basisch: \ce{2H2O + 2 e- <--> H2 + 2 OH-}
+            \end{itemize}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\linewidth}
+            $\Rightarrow$ es bildet stets Wasserstoff \ce{H2}
+        \end{minipage}
+        
     \subsubsection{Beispiele Al H-Typ-Korrosion}
         \textbf{H2 Korrosion von Al in basischer Lösung}\\
         \begin{tabular}{p{1.8cm}ccc}
@@ -31,16 +45,30 @@
             Reduktion:      & \ce{2H3O+ + 2e-}      & \ce{->} & \ce{H2 + H2 + 2 H2O}\\
             Redoxreaktion:  & \ce{2 Al + 6 H3O+}    & \ce{->} & \ce{2 Al3+ + 6H2O + 3H2}
         \end{tabular}
-\subsection{Oxidschichten}
-    Metallische Werkstoffe (ausser Gold/Platinmetalle) bilden bei Raumtemperatur mit Luft eine Oxidschicht, es entsteht ein Metalloxid:\\
-    \ce{n Me + \frac{m}{2} O2 -> $Me_nO_m$}\\
-    Der Schutzfaktor kann mittels PBV ermittelt werden:\\
-    $PBV = \frac{V(Metalloxid)}{V(Metall)}$\\
-    \begin{itemize}
-        \item PBV $\ll$ 1: Rissige, nicht schützende Schicht (MG(0.8), Na (0.3))
-        \item PBV 1- 2: Kompakte, schützende Oxidschicht (Al(1.3), Ni(1.5), Ti(1.7), Cu(1.7), Cr(2.1), Fe(2.1))
-        \item PBV $\gg$ 2: Abblätternde nicht schützende Schicht (V(3.2), W(3.4), Rost(3.6))
-    \end{itemize}
+\subsection{Oxidschichten}\label{Oxidschicht}
+    Alle Metalle (ausser Gold/Platinmetalle) bilden bei Raumtemperatur mit Luft eine Oxidschicht, es entsteht ein Metalloxid:
+
+    \ce{n Me + \frac{m}{2} O2 -> $Me_nO_m$} $\quad$ z.B. \ce{2Fe + \frac{3}{2} O2 -> $Fe_2 O_3$} (1-15nm Schicht)
+
+    Der Schutzfaktor kann mittels \textbf{PBV} (Pilling-Bedworth) ermittelt werden:
+
+    PBV = $\frac{V(Metalloxid)}{V(Metall)}$
+
+    \begin{minipage}{0.05\linewidth}
+        % Muss rein, itemize wird sonst verjodelt
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.91\linewidth}
+        \begin{itemize}
+            \item[PBV $\ll 1$] Rissige, nicht schützende Schicht 
+            \item[]            (MG(0.8), Na (0.3))
+            \item[PBV $1 \sim 2$] Kompakte, schützende Oxidschicht
+            \item[]               (Al(1.3), Ni(1.5), Ti(1.7), Cu(1.7), Cr(2.1), Fe(2.1))
+            \item[PBV $\gg 2$] Abblätternde, nicht schützende Schicht 
+            \item[]            (V(3.2), W(3.4), Rost(3.6))
+        \end{itemize}
+    \end{minipage}
+
 \subsection{Ablauf der Korrosion in wässrigen Lösungen}
     Alle Korrosionsreaktionen verlaufen in 2 Teilschritten:
     \begin{itemize}
@@ -55,43 +83,47 @@
         Können durch Regen, Tau, Bodenfeuchtigkeit oder rel. Luftfeuchtigkeit $> 70\%$ entstehen. Bei Oberflächen mit hygroskopischen Salzen kann auch früher Korrosion entstehen.
     \end{itemize}
 \subsection{Passivatoren und Depassivatoren}
-    Depassivierung hängt vom Gehalt von Passivatoren und Depassivatoren in Elektrolytlösung ab
+    % Depassivierung hängt vom Gehalt von Passivatoren und Depassivatoren in Elektrolytlösung ab
     \subsubsection{Passivatoren}
         $\Rightarrow$ bieten \textbf{anodischen Schutz}($E_A$ wird vergrössert)
         \begin{itemize}
-            \item Fe: \ce{OH-, CrO4^{2-}, NO2-}
+            \item Fe: \ce{OH-, CrO4^{2-}, NO3-}
             \item Al: \ce{NO3-}
         \end{itemize}
         
     \subsubsection{Depassivatoren}
-        $\Rightarrow$ \textbf{zerstören Passivoxidfilm}, bewirken (oft lokale \textbf{Depassivierung}($E_A$ wird verkleinert))
+        $\Rightarrow$ \textbf{zerstören Passivoxidfilm}, bewirken oft lokale \textbf{Depassivierung}($E_A$ wird verkleinert)
         \begin{itemize}
-            \item Fe: \color{blue} \ce{Cl-}\color{black}, \color{red} \ce{H3O+}\color{black}, \ce{SO4^2-}
-            \item Al: \color{blue} \ce{Cl-}\color{black}, \color{red} \ce{H3O+}\color{black}, \ce{OH-}
-            \item Cu: \color{blue} \ce{Cl-}\color{black}, \color{red} \ce{H3O+}\color{black}, \ce{NH3}
+            \item Fe: \color{blue} \ce{Cl-}\color{black}, \color{red} \ce{H3O+}\color{black}, Sulfat \ce{SO4^2-}
+            \item Al: \color{blue} \ce{Cl-}\color{black}, \color{red} \ce{H3O+}\color{black}, Base \ce{OH-}
+            \item Cu: \color{blue} \ce{Cl-}\color{black}, \color{red} \ce{H3O+}\color{black}, Ammoniak \ce{NH3}
             \item Ni: \color{blue} \ce{Cl-}\color{black}, \color{red} \ce{H3O+}\color{black}
         \end{itemize}
-        
-\subsection{Potentialverhältnisse/Aktivierungsenergie}
-    Wann korrodieren Metalle nach \ce{H2}/\ce{O2}-Typ?\\
-    $\Rightarrow \Delta$G $<$ 0\\
-    $\Rightarrow$ Korrosion abhängig von E(M/\ce{M^z+}) unsd E(OM)\\
-    E(OM) ist pH-abhängig:\\
-    $E_{H2}$ = -0.059*pH\\
-    $E_{O2}$ = 1.23 - 0.059*pH\\
+    
+
+\subsection{Flächenkorrision}
+    \begin{itemize}
+        \item Anoden und Kathoden gleichmässig verteilt
+        \item Korr.geschw. überall gleich gross
+        \item Art mit grösstem Materialverlust
+        \item meist relativ ungefährlich
+    \end{itemize}
+
 \subsection{Kontaktkorrosion}
     \begin{itemize}
         \item Reduktion von \ce{O2} an gesamter Oberfläche
         \item Oxidation nur an unedlerem Metall $\rightarrow$ verstärkte Korrosion
-        \item Edleres Metall $\rightarrow$ keine Korrosion(kathodisch geschützt)
+        \item Edleres Metall $\rightarrow$ keine Korrosion (kathodisch geschützt)
         \item Flächenregel: $\frac{v_k(Zn)}{v_k(Zn + Fe)} = \frac{A(Zn)}{A(Zn + Fe)}$
+        \item[] Je grösser die Fläche des edleren Metalls, umso schneller korrodiert das unedlere
     \end{itemize}
 
 \subsection{Lochfrasskorrosion}
     \begin{itemize}
         \item Stark lokalisierte Korrosion
         \item Bildung enger tiefer Löcher
-        \item schwer erkennbar
+        \item Materialabtrag gering
+        \item schwer erkennbar $\to$ \textbf{gefährlich}
     \end{itemize}
 
 \subsection{Belüftungselemente}
@@ -102,3 +134,13 @@
         \item Zusätzlich Flächenregel (Spalt $\rightarrow$ kleine Anode, Passivoxidschicht $\rightarrow$ grosse Kathode)
     \end{itemize}
 
+\subsection{Potentialverhältnisse / Aktivierungsenergie}
+    Wann korrodieren Metalle nach \ce{H2}- bzw. \ce{O2}-Typ?
+
+    \begin{itemize}
+        \item[$\Rightarrow$] $\Delta$G $<$ 0
+        \item[$\Rightarrow$] Korrosion abhängig von E(M/\ce{M^z+}) und E(OM)
+        \item E(OM) ist pH-abhängig:
+        \item[] $E_{H2}$ = -0.059$\cdot$pH
+        \item[] $E_{O2}$ = 1.23 - 0.059$\cdot$pH
+    \end{itemize}
