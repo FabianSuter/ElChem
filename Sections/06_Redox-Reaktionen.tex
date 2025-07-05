@@ -24,18 +24,27 @@
     \end{minipage}
     \hfill
     \begin{minipage}{0.5\linewidth}
-        Oxidationszahlen Bestimmen mittels Regeln:
-        
+        Beispiel: Zu gelöstem \ce{NaCl} und \ce{Pb(NO3)2} wird eine Eisenplatte hineingehalten:
         \begin{itemize}
-            \item[\textbf{R1}] OZ elementarer Stoffe ist Null
-            \item[]            \ce{O_2^0, Cl_2^0}
-            \item[\textbf{R2}] OZ einatomiger Ionen = Ionenladung
-            \item[]            \ce{Na^+} : +\Romannum{1}, \ce{Fe^{2+}} : +\Romannum{2}
-            \item[\textbf{R3}] Bei Molekülen: Bindungselektron beim negativerem Atom
-            \item[]             \ce{F}: immer -\Romannum{1}, \ce{O}: meist -\Romannum{2}, \ce{H}: Meist +\Romannum{1}
-            \item[\textbf{R4}] Summe aller OZ = Ladung des Teilchens
+            \item \ce{Na+} zu \ce{Fe} bergauf, Keine freiwillige Reaktion
+            \item \ce{Pb^{2+}} zu \ce{Fe} bergab, freiwillige Reaktion
+            \begin{itemize}
+                \item Oxidation : \ce{Fe -> Fe^{2+} + 2e-}
+                \item Reduktion : \ce{Pb^{2+} + 2e- -> Pb}
+            \end{itemize}
         \end{itemize}
     \end{minipage}
+\subsection{Redoxzahl Bestimmen}
+Es gibt folgende Regeln für das Bestimmen der Oxidationszahlen:
+
+\begin{tabular}{cll}
+    \textbf{R1} & OZ elementarer Stoffe ist Null & \ce{O_2^0, Cl_2^0} \\
+    \textbf{R2} & OZ einatomiger Ionen = Ionenladung & \makecell{\ce{Na^+} : \ce{Fe^{2+}} : +\Romannum{2}\\ \ce{Fe^{2+}} : +\Romannum{2}} \\
+    \textbf{R3} & Bei Molekülen: Bindungselektron beim negativerem Atom & \makecell{\ce{F}: immer -\Romannum{1}\\ \ce{O}: meist -\Romannum{2} \\ \ce{H}: Meist +\Romannum{1}} \\
+    \textbf{R4} & Summe aller OZ = Ladung des Teilchens & \\
+    \textbf{R5} & Atome aus der ersten Hauptgruppe sind meist auch +\Romannum{1} & (\ce{Li, Na, K, ...})\\
+\end{tabular}
+
     % Aufgrund der \textbf{Standartpotenziale} der Metalle Zn und Cu herrscht eine ``Spannun'', welche die Reaktion ermöglicht. 
     % Das \textbf{\ce{Zn^0}} wird an der Anode zu \textbf{\ce{Zn^2+}} oxidiert (\ce{e^-}-Abgabe), \textbf{\ce{Zn^0}} dient somit als Reduktionsmittel. 
     % Die Elektronen werden an die Kathode abgegeben, wo \textbf{\ce{Cu^2+}} aus der Lösung zu \textbf{\ce{Cu^0}} reduziert (\ce{e^-}-Aufnahme) wird. 
@@ -56,7 +65,9 @@
 
 
     \begin{minipage}{0.4\linewidth}
-        \includegraphics[width=\linewidth]{pictures/Nernst.png}
+        \(
+        \boxed{\bm{E^{0}_{\mathrm{RM/OM}} + \frac{0.059}{z} \cdot \lg \frac{[\mathrm{OM}]}{[\mathrm{RM}]}}}
+        \)
     \end{minipage}
     \hfill
     \begin{minipage}{0.55\linewidth}
