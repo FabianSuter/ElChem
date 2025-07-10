@@ -16,7 +16,8 @@ Diese Zusammenfassung entstand durch eine Zusammenarbeit von Fabian Suter & Stei
 ## Quellen
 
 Einige Inhalte wurden aus den Unterrichtsmaterialien entnommen.
-Die Zusammenfassung wurde aus einem bestehenden Dokument von Yves Looser, Nino Briker und Sandro Heidrich aus dem FS 24 erweitert
+Die Zusammenfassung wurde aus einem bestehenden Dokument von Yves Looser, Nino Briker und Sandro Heidrich aus dem FS 24 erweitert.
+Einige Inhalte wurden aus der [Zusammenfassung von Luna Haas kopiert](https://github.com/lu-haa/Elektrochemie)
 
 ## Template
 
